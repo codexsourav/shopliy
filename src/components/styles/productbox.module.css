@@ -1,0 +1,57 @@
+.product {
+    max-width: 280px;
+    background-color: rgb(243, 243, 243);
+    margin: 20px;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    gap: 15px;
+    padding: 20px 10px;
+
+}
+
+.box img {
+    height: 120px;
+}
+
+.edit {
+    position: relative;
+    top: 0;
+    background-color: rgb(32, 32, 32);
+    width: 100%;
+    display: block;
+    text-align: center;
+    color: #fff;
+    padding: 10px 0px;
+    transition: 0.4s;
+}
+
+.edit:hover {
+    background-color: rgb(75, 75, 75);
+}
+
+.links {
+    display: flex;
+}
+
+.delete {
+    position: relative;
+    top: 0;
+    background-color: rgba(197, 64, 64, 0.822);
+    width: 100%;
+    display: block;
+    text-align: center;
+    color: #fff;
+    padding: 10px 0px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.delete:hover {
+    background-color: rgba(247, 72, 72, 0.822);
+}

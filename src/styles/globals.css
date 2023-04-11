@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  user-select: none;
+}
+
+*:hover,
+*:focus {
+  outline: none;
+  border: none;
+}
+
+.product-list {
+  margin: 0px 50px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+
+  padding: 10px;
+}
+
+.setinput {
+  margin: 15px 20px;
+}
+
+.conatiner {
+  margin: 0px 80px;
+}
+
+.setinput label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.setinput input,
+.setinput textarea,
+.setinput select {
+  width: 100%;
+  border: none;
+  background-color: rgb(245, 245, 245);
+  padding: 15px;
+}
+
+.makebutton {
+  width: 30%;
+  border: none;
+  background-color: rgb(24, 24, 24);
+  padding: 18px;
+  color: white;
+  margin: 20px;
+  margin-bottom: 40px;
+
+  cursor: pointer;
+}
+
+.setinputsearch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.setinputsearch input {
+  width: 100%;
+  border: none;
+  background-color: rgb(245, 245, 245);
+  padding: 15px;
+}
+
+.setinputsearch button {
+  width: 120px;
+  border: none;
+  background-color: rgb(31, 31, 31);
+  padding: 15px;
+  color: white;
+  cursor: pointer;
+}
