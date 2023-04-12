@@ -5,6 +5,8 @@ export function middleware(request) {
     const getAuth = async () => {
         try {
             let userToken = request.cookies.get('user');
+            const token = request.cookies['allow-list']
+            console.log(token);
             if (!userToken) {
                 console.log(request);
                 console.log("token Not Get" + userToken);
