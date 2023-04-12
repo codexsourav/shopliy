@@ -1,4 +1,4 @@
 const KEYS = {
-    APIHOST: "http://localhost:8080/api",
+    APIHOST: "http://api.secureapk.in/api",
 }
 module.exports = KEYS;
