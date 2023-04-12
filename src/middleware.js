@@ -4,7 +4,7 @@ import KEYS from "./keys";
 export function middleware(request) {
     const getAuth = async () => {
         try {
-            let userToken = request.cookies.get('user');
+            let userToken = request.cookies.get('_vercel_jwt');
             if (!userToken) {
                 console.log(request);
                 console.log("token Not Get" + userToken);
