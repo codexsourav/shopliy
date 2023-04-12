@@ -1,4 +1,4 @@
 const KEYS = {
-    APIHOST: "https://api.secureapk.in/api",
+    APIHOST: "https://shopily.onrender.com/api",
 }
 module.exports = KEYS;
