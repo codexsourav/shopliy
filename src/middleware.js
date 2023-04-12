@@ -12,12 +12,10 @@ export function middleware(request) {
 
                 userToken = request.cookies.get('_vercel_jwt');
             }
-
-            const token = request.cookies['allow-list']
-            console.log(token);
+            console.log(request);
+            console.log("token Not Get" + userToken);
             if (!userToken) {
-                console.log(request);
-                console.log("token Not Get" + userToken);
+
                 return NextResponse.redirect(new URL('/auth/login', request.url))
             }
 
