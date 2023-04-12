@@ -4,7 +4,15 @@ import KEYS from "./keys";
 export function middleware(request) {
     const getAuth = async () => {
         try {
-            let userToken = request.cookies.get('user');
+            let userToken;
+            if (request.cookies.get('user')) {
+
+                userToken = request.cookies.get('user');
+            } else {
+
+                userToken = request.cookies.get('_vercel_jwt');
+            }
+
             const token = request.cookies['allow-list']
             console.log(token);
             if (!userToken) {
