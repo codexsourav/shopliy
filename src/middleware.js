@@ -5,7 +5,7 @@ import KEYS from "./keys";
 export function middleware(request) {
     const getAuth = async () => {
         try {
-            let userToken = request.cookies.get('user') ?? req.cookies.get("_vercel_jwt");
+            let userToken = request.cookies.get('user') ?? request.cookies.get("_vercel_jwt");
             console.log(request.cookies);
             if (!userToken) {
                 return NextResponse.redirect(new URL('/auth/login', request.url))
