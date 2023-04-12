@@ -29,6 +29,7 @@ export function middleware(request) {
                 return NextResponse.next();
             }
         } catch (error) {
+            console.log("final Errro");
             console.log(error);
             return NextResponse.redirect(new URL('/auth/login', request.url));
         }
