@@ -35,7 +35,7 @@ function Login() {
                 email, pass
             });
             setloading(true)
-            let response = await fetch(KEYS.APIHOST + "/authLlogin", {
+            let response = await fetch(KEYS.APIHOST + "/auth/login", {
                 method: "POST",
                 body: bodyContent,
                 headers: headersList
