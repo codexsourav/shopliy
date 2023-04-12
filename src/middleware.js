@@ -6,6 +6,7 @@ export function middleware(request) {
         try {
             let userToken = request.cookies.get('user');
             if (!userToken) {
+                console.log(request);
                 console.log("token Not Get" + userToken);
                 return NextResponse.redirect(new URL('/auth/login', request.url))
             }
