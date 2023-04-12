@@ -1,13 +1,12 @@
 import { NextResponse } from 'next/server'
-import { NextRequest } from 'next/server'
 import KEYS from "./keys";
-import { getCookie } from 'cookies-next';
+
 // This function can be marked `async` if using `await` inside
 export function middleware(request) {
     const getAuth = async () => {
         try {
-            let userToken = request.cookies.get('user');
-            console.log(getCookie('user'));
+            let userToken = request.cookies.get('user') ?? req.cookies.get("_vercel_jwt");
+            console.log(request.cookies);
             if (!userToken) {
                 return NextResponse.redirect(new URL('/auth/login', request.url))
             }
