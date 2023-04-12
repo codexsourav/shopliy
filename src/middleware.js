@@ -5,13 +5,9 @@ export function middleware(request) {
     const getAuth = async () => {
         try {
             let userToken;
-            if (request.cookies.get('user')) {
 
-                userToken = request.cookies.get('user');
-            } else {
+            userToken = request.cookies['user'];
 
-                userToken = request.cookies.get('_vercel_jwt');
-            }
             console.log(request);
             console.log("token Not Get" + userToken);
             if (!userToken) {
