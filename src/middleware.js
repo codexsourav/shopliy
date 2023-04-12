@@ -1,14 +1,12 @@
 import { NextResponse } from 'next/server'
-import { NextRequest } from 'next/server'
 import KEYS from "./keys";
-import { getCookie } from 'cookies-next';
 // This function can be marked `async` if using `await` inside
 export function middleware(request) {
     const getAuth = async () => {
         try {
             let userToken = request.cookies.get('user');
-
             if (!userToken) {
+                console.log("token Not Get" + userToken);
                 return NextResponse.redirect(new URL('/auth/login', request.url))
             }
 
@@ -25,6 +23,7 @@ export function middleware(request) {
             let data = await response.json();
 
             if (data.auth == false) {
+                console.log("Server Auth IS False Get" + userToken);
                 return NextResponse.redirect(new URL('/auth/login', request.url));
             } else {
                 return NextResponse.next();
