@@ -23,6 +23,7 @@ function Navbar() {
                     <li><Link href="/admin/product/add">Add Product</Link></li>
                     <li><Link href="/admin/products">Products</Link></li>
                     <li><Link href="/admin/product/private">Private</Link></li>
+                    <li><Link href="/admin/offers">Offers</Link></li>
                     <li><Link href="/admin/orders">Orders</Link></li>
                     <li><Link href="/admin/product/search">Search</Link></li>
                     <li><a onClick={logout}>Logout</a></li>

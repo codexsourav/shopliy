@@ -1,4 +1,4 @@
 const KEYS = {
-    APIHOST: "https://shopily.onrender.com/api",
+    APIHOST: "http://localhost:8080/api",
 }
 module.exports = KEYS;

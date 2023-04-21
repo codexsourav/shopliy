@@ -76,3 +76,17 @@
   color: white;
   cursor: pointer;
 }
+
+.add-btn {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 15px 30px;
+  margin: 20px;
+  border-radius: 20px;
+  background-color: rgba(43, 106, 177, 0.842);
+  color: #fff;
+  border: none;
+  z-index: 999;
+  cursor: pointer;
+}
